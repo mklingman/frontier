@@ -1,1 +1,39 @@
-.css
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+
+#loginform {
+	background-color: dodgerblue;
+	display: block;
+	width: 300px;
+	border: solid 1px;
+	margin-top: auto;
+	text-align: center;
+	margin: auto;
+	padding: 1em 3em;
+	color: white;
+}
+
+
+input {
+	color: white;
+	display: block;
+	margin-bottom: 1.5em;
+	width: 100%;
+	border: none;
+	padding: 1em;
+}
+
+label {
+	margin-top: 2em;
+}
+
+input[type="submit"] {
+	margin-top: 2em;
+	border-color: red;
+	color: white;
+	font-size: 1.2em;
+	padding: .5em;
+}
