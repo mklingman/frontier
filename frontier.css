@@ -94,7 +94,16 @@ input[type="checkbox"] {
 	margin: 10px auto;
 	display: block;
 	cursor: pointer;
+	border-radius: 50%;
 
+}
+
+#mypic {
+	width: 400px;
+	height: auto;
+	margin: 10px auto;
+	display: block;
+	cursor: pointer;
 }
 
 
@@ -134,8 +143,24 @@ input[type="checkbox"] {
 	padding-bottom: 60px;
 	margin: auto;
 
+
 }
 
 #btn:hover {
-	opacity: .50;
+	opacity: .60;
+}
+
+#circle {
+
+	display: flex;
+	float: inherit;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin-right: 10px;
+	list-style: none;
+	transition: 0.2s;
+}
+
+#circle:hover {
+	transform: scale(1.1);
 }
