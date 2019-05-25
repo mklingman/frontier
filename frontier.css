@@ -140,15 +140,23 @@ input[type="checkbox"] {
 	font-size: 20px;
 	opacity: 1;
 	transition: 0.2s;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 	margin: auto;
+	display: flex;
+	justify-content: space-around;
 
 
 }
 
-#btn:hover {
+.hove:hover {
 	opacity: .60;
 }
+
+
+/*
+icon photo is now a small circle with
+growing on hover
+*/
 
 #circle {
 
@@ -163,4 +171,33 @@ input[type="checkbox"] {
 
 #circle:hover {
 	transform: scale(1.1);
+}
+
+/*NEW PAGE - WORK - BODY CSS ADDED HERE*/
+
+.bodywork {
+	background-color: #00A281;
+	margin-top: 2em;
+}
+
+#green {
+	background-color: #00A281;
+	color: black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#btn1 {
+	text-align: center;
+	font-size: 20px;
+	opacity: 1;
+	transition: 0.2s;
+	padding-bottom: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+
+
 }
