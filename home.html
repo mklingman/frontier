@@ -8,6 +8,36 @@
 	<link rel="stylesheet" href="frontier.css" type="text/css">
 
 	<title>home</title>
+	<style>
+		.hoved {
+			animation: animationFrames ease 1s;
+			animation-iteration-count: 1;
+			transform-origin: 50% 50%;
+
+		}
+
+		@keyframes animationFrames {
+			0% {
+				opacity: 0;
+				transform: translate(300px, 0px) skewX(-30deg);
+			}
+
+			60% {
+				opacity: 1;
+				transform: translate(-40px, 0px) skewX(30deg);
+			}
+
+			80% {
+				opacity: 1;
+				transform: translate(0px, 0px) skewX(-15deg);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translate(0px, 0px) skewX(0deg);
+			}
+		}
+	</style>
 </head>
 
 
@@ -17,45 +47,28 @@
 	<header>
 		<div class="upload">
 
-			<h1>
-				F R O N T I E R
-			</h1>
 
+
+			<a href="index.html"> <img id="btn1" class="" src="images/logoblue.jpg" style="width:16%; height:16%" title="today" alt="todaybtn"></a>
+			<a id="circle" href="home.html"><img id="circle1" src="images/iconpic.jpg" alt="iconpic" style="width:40px;height:40px;"></a>
 
 		</div>
+
+
 	</header>
 	<main>
-		<section class="container">
 
-			<a id="btn" href="index.html"><img src="images/work.png" style="width:40%; height:40%" title="work" alt="workbtn"></a>
+		<h3 class="container">
 
-			<a id="btn" href="index.html"><img src="images/in.png" style="width:40%; height:40%" title="in" alt="inbtn"></a>
+			<a href="work.html"><img class="hoved hover btn" src="images/work.png" style="width:45%; height:45%" title="work" alt="workbtn"></a>
 
-			<a id="btn" href="index.html"><img src="images/chat.png" style="width:40%; height:40%" title="chat" alt="chatbtn"></a>
+			<a href="in.html"><img class="hoved hover btn" src="images/in.png" style="width:45%; height:45%" title="in" alt="inbtn"></a>
 
-			<a id="btn" href="index.html"><img src="images/jan5.png" style="width:40%; height:40%" title="date" alt="datebtn"></a>
+			<a href="chat.html"><img class="hoved hover btn" src="images/chat.png" style="width:45%; height:45%" title="chat" alt="chatbtn"></a>
 
-		</section>
+			<a href="date.html"><img class="hoved hover btn" src="images/jan5.png" style="width:45%; height:45%" title="date" alt="datebtn"></a>
 
-
-
-
-
-		<!--		<main>-->
-
-		<!--		<img class="icon" src="images/confirm.jpg" alt="icon">-->
-
-		<!--
-<section id="loginform">
-	<h2>Great Job !</h2>
-
-	<a id="savephoto" href="home.html" class="submit-btn">H O M E</a>
-
-</section>
--->
-
-
-
+		</h3>
 
 
 
@@ -63,9 +76,8 @@
 	</main>
 
 
-
-
 	<footer>
+
 
 
 	</footer>

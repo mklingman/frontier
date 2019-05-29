@@ -104,6 +104,7 @@ input[type="checkbox"] {
 	margin: 10px auto;
 	display: block;
 	cursor: pointer;
+	border-radius: 2%;
 }
 
 
@@ -135,7 +136,7 @@ input[type="checkbox"] {
 */
 }
 
-#btn {
+.btn {
 	text-align: center;
 	font-size: 20px;
 	opacity: 1;
@@ -148,15 +149,46 @@ input[type="checkbox"] {
 
 }
 
+#btn {
+	text-align: center;
+	font-size: 20px;
+	opacity: 1;
+	transition: 0.2s;
+	padding-bottom: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
 .hove:hover {
 	opacity: .60;
 }
 
+.hoved:hover {
+	opacity: .60;
+}
 
 /*
 icon photo is now a small circle with
 growing on hover
 */
+
+#circle1 {
+
+	display: flex;
+	float: inherit;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin-right: 10px;
+	list-style: none;
+	transition: 0.2s;
+
+}
+
+#circle1:hover {
+	transform: scale(1.1);
+}
 
 #circle {
 
@@ -167,6 +199,7 @@ growing on hover
 	margin-right: 10px;
 	list-style: none;
 	transition: 0.2s;
+	padding-bottom: 10px;
 }
 
 #circle:hover {
@@ -191,6 +224,19 @@ growing on hover
 }
 
 #btn1 {
+	text-align: center;
+	font-size: 20px;
+	opacity: 1;
+	transition: 0.2s;
+	padding-bottom: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+
+
+}
+
+.btn1 {
 	text-align: center;
 	font-size: 20px;
 	opacity: 1;
@@ -303,6 +349,7 @@ a:link {
 .darker {
 	border-color: #ccc;
 	background-color: #ddd;
+	border-radius: 5px;
 	display: flex;
 	float: inherit;
 	justify-content: space-around;
@@ -342,6 +389,10 @@ a:link {
 	color: #999;
 }
 
+.head {
+	border-radius: 50%;
+}
+
 /*DATE PAGE CSS STARTS HERE !!*/
 
 
@@ -351,6 +402,14 @@ a:link {
 
 ul {
 	list-style-type: none;
+}
+
+.white {
+	color: white;
+	background: #2B66AB;
+	font-style: italic;
+	border-style: double;
+
 }
 
 
@@ -444,5 +503,61 @@ ul {
 	.weekdays li,
 	.days li {
 		width: 12.2%;
+	}
+}
+
+/*HOME PAGE responsive screens*/
+
+@media screen and (max-width:720px) {
+
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	#circle {
+		margin-left: 3%;
+	}
+
+	#circle1 {
+		margin-left: 3%;
+	}
+
+	.circle {
+		margin-left: 3%;
+	}
+
+	.container {
+		width: 70%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		margin-left: 15%;
+
+	}
+
+	.container.darker {
+		padding: 1px;
+	}
+
+	#mypic,
+	.icon {
+		width: 90%;
+	}
+
+	.right {
+		margin-left: 160px;
+	}
+
+
+
+	/*	NEED TO SORT THIS SIZE */
+	#btn1 {
+		max-width: 100%;
+		height: auto;
 	}
 }
